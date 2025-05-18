@@ -78,3 +78,22 @@ button:active {
     width: 100%;
   }
 }
+@media (max-width: 390px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #result {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
