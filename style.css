@@ -1,0 +1,73 @@
+/* Grundlayout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1B263B; /* dunkler Nacht-Himmel */
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 34px;
+    color: #FFC300; /* Blitzgelb */
+}
+
+p {
+    font-size: 18px;
+    color: #B0BEC5; /* hellgrauer Text */
+}
+
+/* Buttons */
+button {
+    background-color: #00B4D8;
+    color: white;
+    padding: 14px 32px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 180, 216, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0096C7;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Ergebnisbox */
+#result {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #415A77; /* dunkles Gewitterblau */
+    color: #FFC300;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#result.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    button {
+        width: 80%;
+        font-size: 16px;
+    }
+}
